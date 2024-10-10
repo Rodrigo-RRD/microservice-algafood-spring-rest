@@ -1,0 +1,22 @@
+---------Receita para construir a imagem
+Va para onde esta a api 
+coloque no poweshell com adm
+e insira o comando do maven
+./mvnw clean package
+
+Gerar com o perfil
+./mvnw package -Pdocker
+
+Para verificar a existencia do jar
+ls target
+
+---------- Construir a imagem
+comando para construir:
+docker image build -t algafood-api .
+
+Rodar um container apartir de uma imagem
+docker container run --rm -p 8080:8080 algafood-api
+
+Rodar com a porta determinada
+docker container run --rm -p 8081:8081 -e DB_HOST=rodrigo-mysql --network algafood-network algafood-api
+
