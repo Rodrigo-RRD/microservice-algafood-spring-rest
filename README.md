@@ -1,4 +1,4 @@
-# API REST com Spring Boot - Microserviço de Banco de Dados com Autenticação via Tokens
+# API REST com Spring Boot: Microserviço que consome informações de um Banco de Dados com Autenticação baseada em Tokens
 
 ## Descrição
 
